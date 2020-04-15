@@ -52,10 +52,25 @@ https://developer.wmata.com/
 https://www.brewerydb.com/developers
 https://owlbot.info/?ref=public-apis
 
-**Covid***
+**Covid**
 https://covid19api.com/
 https://coronavirus.jhu.edu/map.html
 https://coronavirus.jhu.edu/map.html
 
+## Pseudo Code
+
+1. Creating initial webpage with DMV covid resources
+2. website design with bootstrap/css
+3. pulling info from covid API
+4. display info on main page
+5. create search function for more info on each area?
+6. survival guide and info page
+7. comic relief page 
+
+## initial tasks
+
+build quick test for covid API
+what info can we console.log using ajax
+brainstorm what to push into website
 
 
