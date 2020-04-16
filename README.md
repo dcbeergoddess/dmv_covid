@@ -1,6 +1,10 @@
 # project_01
 First Group project
 
+# Trello Link
+https://trello.com/invite/b/dBNdVUVs/ca5539805af6ee3d365b73815284aa73/gwu-project-1
+
+
 ## SPECS OF PROJECT
 - Build any kind of website
 - Have to use jQuery
@@ -43,7 +47,7 @@ Possible new Technology
 Afton/Ray: CSS/Bootstrap/HTML
 Rachel/Noah: Logic
 
-## API Resources
+### API Resources
 https://p5js.org/
 https://evilinsult.com/api/
 https://yesno.wtf/api
@@ -57,11 +61,14 @@ https://covid19api.com/
 https://coronavirus.jhu.edu/map.html
 https://coronavirus.jhu.edu/map.html
 
+**By State**
+https://covidtracking.com/api
+
 ## Pseudo Code
 
 1. Creating initial webpage with DMV covid resources
 2. website design with bootstrap/css
-3. pulling info from covid API
+3. pulling info from covid API - current uptodate 
 4. display info on main page
 5. create search function for more info on each area?
 6. survival guide and info page
