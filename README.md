@@ -92,3 +92,5 @@ what info can we console.log using ajax
 brainstorm what to push into website
 
 
+made edits to this VS code
+just typing random text ..........
