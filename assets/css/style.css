@@ -1,13 +1,50 @@
 h1 {
   color: red;
+  font-size: 50px;
 }
 
-/* added some margin to make the cards have some space in between them  */
+h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+h3 {
+padding-top: 20px;
+}
+
+#covidStats {
+  justify-content: center;
+}
+
 .covidStats {
-  margin: 10px;
+  margin: 15px;
 }
 
 /* added padding here to make everything in this div not flush with the left side of the screen, looks nicer */
 #stateCards {
   padding-left: 15px;
+}
+
+#stateCards {
+  padding-top: 15px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.card-body {
+  font-size: 20px;
+}
+
+.carouselComic {
+height: auto;
+width: auto;
+}
+
+.carousel-item {
+  padding: 25px;
+}
+
+.carousel img {
+  margin: auto;
 }
