@@ -67,7 +67,18 @@ https://covidtracking.com/api
 ## Pseudo Code
 
 1. Creating initial webpage with DMV covid resources
+   - with nav bar
 2. website design with bootstrap/css
+    - design how input all three states on main page
+    - use 3 cards from bootstrap
+3. pulling info from covid API
+     - Can grab most recent covid values by state
+    - "https://covidtracking.com/api/states?state=DC"
+    - "https://covidtracking.com/api/states?state=MD"
+    - "https://covidtracking.com/api/states?state=VA"
+4. push info in cards
+    - decide what info to include
+
 3. pulling info from covid API - current uptodate 
 4. display info on main page
 5. create search function for more info on each area?
