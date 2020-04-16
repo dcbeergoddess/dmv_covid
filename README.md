@@ -60,9 +60,17 @@ https://coronavirus.jhu.edu/map.html
 ## Pseudo Code
 
 1. Creating initial webpage with DMV covid resources
+   - with nav bar
 2. website design with bootstrap/css
+    - design how input all three states on main page
+    - use 3 cards from bootstrap
 3. pulling info from covid API
-4. display info on main page
+     - Can grab most recent covid values by state
+    - "https://covidtracking.com/api/states?state=DC"
+    - "https://covidtracking.com/api/states?state=MD"
+    - "https://covidtracking.com/api/states?state=VA"
+4. push info in cards
+    - decide what info to include
 5. create search function for more info on each area?
 6. survival guide and info page
 7. comic relief page 
