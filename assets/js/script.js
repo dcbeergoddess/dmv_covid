@@ -26,6 +26,7 @@ $.ajax ({
   $("#DC-recovered").text("Recovered: " + response.recovered);
 
 
+
 });
 
 
