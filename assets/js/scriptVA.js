@@ -6,10 +6,16 @@ $.ajax ({
   }) 
   .then(function(response){
     console.log(JSON.stringify(response));
-    $("#lastUpdate").text("Cases: " + response.dateModified);
-    $("#cases").text("Cases: " + response.positive);
-    $("#deaths").text("Deaths: " + response.death);
-    $("#recovered").text("Recovered: " + response.recovered);
+    var dateResponse=response.dateModified;
+    var dateMomented=moment(dateResponse).format("MMM Do h:mm a");
+    $("#lastUpdate").text("Last Update: " +dateMomented);
+    $("#totalTests").text("Total Patients Tested: " +response.totalTestResults);
+    $("#cases").text("Total Cases: " + response.positive);
+    $("#deaths").text("Total Deaths: " + response.death);
+    $("#recovered").text("Total Fully Recovered: " + response.recovered);
+
+   var positivePercent=Math.trunc(100*parseInt(response.positive)/parseInt(response.totalTestResults),1);
+    $("#positivePercent").text("Percent of Tests that were Positive: "+positivePercent+"%");
   });
   
 
@@ -45,6 +51,7 @@ $.ajax ({
   }) 
   .then(function(response){
     console.log(JSON.stringify(response[0]));
+
   });
   
 

@@ -50,35 +50,48 @@
   
   
   
-  
-  <div class="grid-container">
+  <h1 id="lastUpdate"></h1>
+  <div class="page-grid">
     <!-- MORE DETAILED DATA -->
-    <div id="dataDiv">
-      <p id="lastUpdate"></p>
+    <div id="dataDiv" class="data-grid">
+      <p id="totalTests"></p>
+      <p id="positivePercent"></p>
       <p id="cases"></p>
       <p id="deaths"></p>
       <p id="recovered"></p>
-    </div>
+    </div> 
+    
+    
+    
+    
     
     <!-- GENERAL FAQ -->
-    <div id="faqDiv"></div>
+    <!-- <div id="faqDiv">
+      
+    </div> -->
     
     <!-- UNEMPLOYMENT -->
-    <div id="employDiv"></div>
+    <!-- <div id="employDiv">
+      
+    </div> -->
     
-    <!-- IFRAME SHOWING EXECUTIVE ORDER -->
-    <div id="pdfDiv">    
-      <iframe src="assets\Virginia-ExecOrder53.pdf" frameborder="0" height="800px" width="600px"></iframe>
-    </div>
+    <div>
+
+    <!-- IFRAME SHOWING EXECUTIVE ORDER -->    
+    <iframe src="assets\Virginia-ExecOrder53.pdf" frameborder="0" height="800px" width="600px"></iframe>
+    
     
     <!-- TWITTER -->
-    <div id="twitterDiv">
+  
       <a class="twitter-timeline" 
-      href="https://twitter.com/VDHgov?ref_src=twsrc%5Etfw">
+      href="https://twitter.com/VDHgov?ref_src=twsrc%5Etfw"
+      data-width="600"
+      data-height="800">
       Tweets by VDHgov</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+      </script>
+
     </div>
-    
     
   </div>
   
@@ -98,6 +111,7 @@
   
   <!-- link to the JS file -->
   <script type="text/javascript" src="./assets/js/scriptVA.js"></script>
+  <script src="assets/js/moment.js"></script>
 </body>
 
 </html>

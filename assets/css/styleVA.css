@@ -1,16 +1,23 @@
 
 
-
-
-
 .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     margin: 20px;
+}
+
+
+
+.data-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
      
 }
 
 #dataDiv{
+    justify-content: center;
     text-align: center;
     font-size: larger;
     margin: 20px;
 }
+
