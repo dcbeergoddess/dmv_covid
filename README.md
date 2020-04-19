@@ -4,6 +4,10 @@ First Group project
 # Trello Link
 https://trello.com/invite/b/dBNdVUVs/ca5539805af6ee3d365b73815284aa73/gwu-project-1
 
+# User Story
+
+A main access point to provide current information on the Covid-19 pandemic for the local DC, MD, and VA area.  
+
 
 ## SPECS OF PROJECT
 - Build any kind of website
@@ -44,8 +48,10 @@ Possible new Technology
     - Pokemon/fun resources
 
 
-Afton/Ray: CSS/Bootstrap/HTML
-Rachel/Noah: Logic
+Afton: CSS/FunPage API
+Rachel: DC/README
+NOAH: VA/CSS GRID
+RAYMOND: MD/CSS
 
 ### API Resources
 https://p5js.org/
@@ -90,3 +96,34 @@ https://covidtracking.com/api
 build quick test for covid API
 what info can we console.log using ajax
 brainstorm what to push into website
+
+### Important Info for State Specific Sites
+- DC - Rachel
+- VA - NOAH
+- MD - Raymond
+- Daily Increases in Cases
+- Incorporate twitter updates
+- links to sites with resources
+    - unemployement
+    - health
+    - food
+    - etc.
+- FAQs that we come accross in our research
+
+**NOAH**
+- accordion boxes for frequently asked questions
+- twitter feed
+- google anayltics api to graph, might be too much to include
+
+### Other Things-to-do Update Sat 04_18
+
+- forms to incorporate in later
+    - newsletter submissions
+- chat rooms
+- other interactive components 
+- slideshow ideas
+    - agenda for presentation (RM) 
+
+
+
+
