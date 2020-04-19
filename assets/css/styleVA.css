@@ -1,0 +1,16 @@
+
+
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     
+}
+
+#dataDiv{
+    text-align: center;
+    font-size: larger;
+    margin: 20px;
+}
