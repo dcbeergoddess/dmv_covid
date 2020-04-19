@@ -3,9 +3,12 @@ body {
 }
 
 h1 {
-  color: rgb(143, 187, 187);
-  font-size: 20px;
+  color: rgb(25, 29, 29);
+  font-size: 40px;
   text-align: center;
+  padding: 20px;
+  font-family: 'Bellota', cursive;
+
 }
 
 h2 {
@@ -77,4 +80,14 @@ h2 {
     ". game-paragraph game game";
 }
 
+}
+
+.card-group {
+  padding: 30px;
+}
+
+#card3 {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
 }
