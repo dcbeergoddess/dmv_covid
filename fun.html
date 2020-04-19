@@ -46,9 +46,64 @@
             </div>
         </div>
     </nav>
+    <!-- created a header and used css to style it -->
+    <h1>Questions? Losing your mind? Want to help?</h1>
+
+    </div>
+    <!-- created cards for 3 options, each option includes links -->
+
+    <div class="card-deck">
+        <div id="card3" class="card">
+            <img class="card-img-top" src="./assets/images/faq.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">I have so many questions!</h5>
+                <p class="card-text">Not even Google can help me anymore, what should I do? Who should I ask? Where did
+                    I come from?</p>
+                <div id="links">
+                    <br>
+                    <p><a id="link-text" href="https://lmgtfy.com/?q=better+covid+faq" class="card-link">Try this</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="card3" class="card">
+            <img class="card-img-top" src="./assets/images/panic.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">I keep having panic attacks, is this normal?</h5>
+                <p class="card-text">Yes! These are scary times and we are only human. Check out these distractions
+                    below to help take your mind off of things.</p>
+                <div id="links">
+                    <a href="https://mynoise.net/" target="_blank" class="card-link">Relaxing sounds</a><br>
+                </div>
+            </div>
+        </div>
+
+        <div id="card3" class="card">
+            <img class="card-img-top" src="./assets/images/3d2.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">How can I help?</h5>
+                <p class="card-text">There are plenty of ways you can help support those on the front lines with
+                    Covid-19. Check out the links below for more information on ways you can help out from the safety of
+                    isolation!</p>
+
+                <!-- create links id to add css and create a border around just the links -->
+                <div id="links">
+                    <a href="https://foldingathome.org/covid19/" target="_blank" class="card-link">Folding at
+                        Home</a><br>
+                    <p>Donate your computing power to help Covid-19 research!</p>
+                    <a href="https://www.3dsystems.com/covid-19-response" target="_blank" class="card-link">Make 3D
+                        PPE</a><br>
+                    <p>If you own a 3D printer, consider helping print PPE gear for donation.</p>
+                    <p class="stay">Stay indoors when possible</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <h1>And Now for Something Completely Different</h1>
 
+    <!-- using a carousel so we can flip through comic images, disabled the auto slide -->
     <div class="carouselComic">
         <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
@@ -68,6 +123,7 @@
                         alt="Third slide">
                 </div>
             </div>
+            <!-- edited the carousel icons on css to make them larger/easier to see -->
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -78,60 +134,20 @@
             </a>
 
         </div>
-
+        <!-- created a credit div to link to xkcd - made sure to use target blank so it opens in new page -->
         <div class="credit-div">
-            <a class="credit" href="https://xkcd.com/">See more at: xkcd (click me!)</a>
-        </div>
-
-    </div>
-
-    <div class="card-deck">
-        <div id="card3" class="card">
-            <img class="card-img-top" src="./assets/images/faq.png" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">FAQ</h5>
-                <p class="card-text">I have asked Google every question there is to ask about Covid-19. Google has let
-                    me down. I need to know MORE. <br> Read through
-                    these FAQ to see if others have thought of a question you have not. Endless knowledge!</p>
-            </div>
-            <div class="card-footer">
-                <a href="https://lmgtfy.com/?q=better+covid+faq" class="card-link">Try this</a>
-            </div>
-        </div>
-        <div id="card3" class="card">
-            <img class="card-img-top" src="./assets/images/panic.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">I keep having panic attacks, is this normal?</h5>
-                <p class="card-text">Yes! Do not feel ashamed that you are suffering from panic attacks during the
-                    outbreak. These are scary times and we are only human! Check out these links below to help take your
-                    mind off of things.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-        </div>
-        <div id="card3" class="card">
-            <img class="card-img-top" src="./assets/images/3d.jpg" alt="Card image cap">
-            <div class="card-body"></div>
-            <h5 class="card-title">How can I help?</h5>
-            <p class="card-text">There are plenty of ways you can help support those on the front lines with
-                Covid-19. Check out the links below for more information on ways you can help out from the safety of
-                your home!</p>
-            <div class="card-footer">
-                <div class="card-footer">
-                    <a href="https://foldingathome.org/covid19/" target="_blank" class="card-link">Folding at
-                        Home</a><br>
-                    <a href="https://www.3dsystems.com/covid-19-response" target="_blank" class="card-link">Make 3D
-                        PPE</a><br>
-                    <a href="https://www.cdcfoundation.org/" target="_blank" class="card-link">Donate to CDC
-                        Foundation</a><br>
-                    <a href="https://disasterphilanthropy.org/" target="_blank" class="card-link">Donate to Disaster
-                        Philanthropy</a><br>
-                    <p>Stay indoors, stay safe!</p>
-                </div>
-            </div>
+            <a class="credit" href="https://xkcd.com/" target="_blank">See more at: xkcd (click me!)</a>
         </div>
     </div>
+
+    <!-- embedded a relaxing game -->
+    <div id="game">
+        <p class="game-font">Enjoy this relaxing game</p>
+        <iframe width="800" height="600" src="https://www.addictinggames.com/embed/html5-games/23807"
+            scrolling="no"></iframe>
+    </div>
+
+
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
