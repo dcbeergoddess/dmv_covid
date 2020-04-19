@@ -17,16 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&family=Raleway&display=swap"
         rel="stylesheet">
 
-    <!-- added d3 to create charts -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap" rel="stylesheet">
 
 
     <!-- link to the favicon (giving the website a biohazard icon in the title-->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+
 
 
     <title>Comic Relief</title>
@@ -48,7 +46,66 @@
             </div>
         </div>
     </nav>
+    <!-- created a header and used css to style it -->
+    <h1>Questions? Losing your mind? Want to help?</h1>
 
+    </div>
+    <!-- created cards for 3 options, each option includes links -->
+
+    <div class="card-deck">
+        <div id="card3" class="card">
+            <img class="card-img-top" src="./assets/images/faq.png" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">I have so many questions!</h5>
+                <p class="card-text">Not even Google can help me anymore, what should I do? Who should I ask? How did I
+                    get here?</p>
+                <div id="links">
+                    <br>
+                    <p><a id="link-text" href="https://lmgtfy.com/?q=better+covid+faq" target="_blank"
+                            class="card-link">Try this</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="card3" class="card">
+            <img class="card-img-top" src="./assets/images/panic.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">I keep having panic attacks, is this normal?</h5>
+                <p class="card-text">Yes! These are scary times and we are only human. Check out these distractions
+                    below to help take your mind off of things.</p>
+                <div id="links">
+                    <a href="https://mynoise.net/" target="_blank" class="card-link">Relaxing sounds</a><br>
+                </div>
+            </div>
+        </div>
+
+        <div id="card3" class="card">
+            <img class="card-img-top" src="./assets/images/3d2.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">How can I help?</h5>
+                <p class="card-text">There are plenty of ways you can help support those on the front lines with
+                    Covid-19. Check out the links below for more information on ways you can help out from the safety of
+                    isolation!</p>
+
+                <!-- create links id to add css and create a border around just the links -->
+                <div id="links">
+                    <a href="https://foldingathome.org/covid19/" target="_blank" class="card-link">Folding at
+                        Home</a><br>
+                    <p>Donate your computing power to help Covid-19 research!</p>
+                    <a href="https://www.3dsystems.com/covid-19-response" target="_blank" class="card-link">Make 3D
+                        PPE</a><br>
+                    <p>If you own a 3D printer, consider helping print PPE gear for donation.</p>
+                    <a class="stay" href="https://staythefuckhome.com/" target="_blank"
+                        class="card-link">#StayTheFuckHome</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>And Now for Something Completely Different</h1>
+
+    <!-- using a carousel so we can flip through comic images, disabled the auto slide -->
     <div class="carouselComic">
         <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
             <div class="carousel-inner">
@@ -68,6 +125,7 @@
                         alt="Third slide">
                 </div>
             </div>
+            <!-- edited the carousel icons on css to make them larger/easier to see -->
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -78,19 +136,20 @@
             </a>
 
         </div>
-
+        <!-- created a credit div to link to xkcd - made sure to use target blank so it opens in new page -->
         <div class="credit-div">
-            <a class="credit" href="https://xkcd.com/">See more at: xkcd (click me!)</a>
+            <a class="credit" href="https://xkcd.com/" target="_blank">See more at: xkcd (click me!)</a>
         </div>
+    </div>
 
+    <!-- embedded a relaxing game -->
+    <div id="game">
+        <p class="game-font">Enjoy this relaxing game (click and drag!) </p>
+        <iframe width="800" height="600" src="https://www.addictinggames.com/embed/html5-games/23807"
+            scrolling="no"></iframe>
     </div>
 
 
-    <!-- <p id="game">Play Pandemic!</p>
-    <div class="game-div d-flex justify-content-left">
-        <iframe width="800" height="600" src="https://www.addictinggames.com/embed/html5-games/20449"
-            scrolling="no"></iframe>
-    </div> -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
