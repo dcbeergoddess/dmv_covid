@@ -1,0 +1,80 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: rgb(143, 187, 187);
+  font-size: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.carousel-item {
+  padding: 25px;
+}
+
+.carousel img {
+  margin: auto;
+}
+
+.carousel-control-prev-icon {
+  background-color: black;
+  padding: 25px;
+
+}
+
+.carousel-control-next-icon {
+  background-color: black;
+  padding: 25px;
+}
+
+.carouselComic {
+  grid-area: carousel;
+  padding-top: 15px;
+  background-image: url(https://www.uptodate.com/sites/default/files/cms-files/img/covid-purple-header2.jpg);
+  ;
+}
+
+.credit {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+.credit-div{
+  text-align: center;
+  padding: 15px;
+}
+
+.nav-item{
+  font-size: 20px;
+}
+
+.my-navbar {
+    grid-area: header;
+}
+
+.my-card{
+    grid-area: carousel-image;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      
+.my-grid {
+    display: grid;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+    "header header header header"
+    "carousel carousel carousel carousel-image"
+    ". game-paragraph game game";
+}
+
+}
