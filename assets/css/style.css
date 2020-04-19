@@ -24,7 +24,6 @@ padding-top: 20px;
   margin: 15px;
 }
 
-/* added padding here to make everything in this div not flush with the left side of the screen, looks nicer */
 #stateCards {
   padding-left: 15px;
 }
@@ -37,26 +36,4 @@ padding-top: 20px;
 
 .card-body {
   font-size: 20px;
-}
-
-.carouselComic {
-height: auto;
-width: auto;
-}
-
-.carousel-item {
-  padding: 25px;
-}
-
-.carousel img {
-  margin: auto;
-}
-
-.carousel-control-prev-icon {
-  background-color: black;
-  
-}
-
-.carousel-control-next-icon {
-  background-color: black;
 }
