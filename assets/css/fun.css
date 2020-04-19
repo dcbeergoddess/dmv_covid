@@ -1,0 +1,73 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  /* background-image: url(https://www.hawaiipublicradio.org/sites/khpr/files/styles/x_large/public/202002/virus-4835301_1920_0.jpg); */
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: rgb(143, 187, 187);
+  font-size: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    color: rgb(143, 187, 187) !important;
+}
+
+.navbar {
+    background-color: rgb(75, 75, 80) !important;
+}
+
+.carouselComic {
+height: auto;
+width: auto;
+}
+
+.carousel-item {
+  padding: 25px;
+}
+
+.carousel img {
+  margin: auto;
+}
+
+.carousel-control-prev-icon {
+  background-color: black;
+  padding: 25px;
+
+}
+
+.carousel-control-next-icon {
+  background-color: black;
+  padding: 25px;
+}
+
+.credit {
+    text-align: center;
+    color: rgb(2, 19, 26);
+    padding: 20px !important;
+}
+
+.carouselComic {
+      background-image: url(https://www.hawaiipublicradio.org/sites/khpr/files/styles/x_large/public/202002/virus-4835301_1920_0.jpg);
+
+    /* background-color: rgba(175, 220, 240, 0.5); */
+    padding-top: 15px;
+}
+
+#game {
+    text-align: center;
+    color: rgb(2, 24, 44);
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    /* background-color:rgba(175, 220, 240, 0.774); */
+}
