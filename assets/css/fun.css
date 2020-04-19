@@ -1,6 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  /* background-image: url(https://www.hawaiipublicradio.org/sites/khpr/files/styles/x_large/public/202002/virus-4835301_1920_0.jpg); */
+  font-family: 'Open Sans', sans-serif;
   opacity: 80%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,11 +26,6 @@ h2 {
     background-color: rgb(75, 75, 80) !important;
 }
 
-.carouselComic {
-height: auto;
-width: auto;
-}
-
 .carousel-item {
   padding: 25px;
 }
@@ -51,23 +45,39 @@ width: auto;
   padding: 25px;
 }
 
-.credit {
-    text-align: center;
-    color: rgb(2, 19, 26);
-    padding: 20px !important;
-}
-
 .carouselComic {
-      background-image: url(https://www.hawaiipublicradio.org/sites/khpr/files/styles/x_large/public/202002/virus-4835301_1920_0.jpg);
-
-    /* background-color: rgba(175, 220, 240, 0.5); */
-    padding-top: 15px;
+  background-image: url(https://www.bdpinternational.com/uploads/attachments/ck6axr5izcptnksqp75lnejn5-update-images4.0.130.2500.1406.max.png);
+  grid-area: carousel;
+  padding-top: 15px;
 }
 
-#game {
-    text-align: center;
-    color: rgb(2, 24, 44);
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    /* background-color:rgba(175, 220, 240, 0.774); */
+.credit {
+  text-align: center;
+  color: rgb(194, 205, 209);
+  padding: 20px !important;
+}
+
+.my-navbar {
+    grid-area: header;
+}
+
+.my-card{
+    grid-area: carousel-image;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      
+.my-grid {
+    display: grid;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+    "header header header header"
+    "carousel carousel carousel carousel-image"
+    ". game-paragraph game game";
+}
+
 }

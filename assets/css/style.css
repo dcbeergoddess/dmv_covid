@@ -1,5 +1,6 @@
 body {
-  font-family: 'Raleway', sans-serif;}
+  font-family: 'Open Sans', sans-serif;
+}
 
 h1 {
   color: red;
@@ -17,11 +18,12 @@ padding-top: 20px;
 }
 
 #covidStats {
-  justify-content: center;
+text-align: center;
 }
 
 .covidStats {
   margin: 15px;
+  width: 350px;
 }
 
 #stateCards {
@@ -36,4 +38,44 @@ padding-top: 20px;
 
 .card-body {
   font-size: 20px;
+}
+
+.nav-item{
+  font-size: 20px;
+}
+
+.my-navbar {
+    grid-area: header;
+}
+
+.my-card{
+    grid-area: carousel-image;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-subtitle {
+  text-align: center;
+}
+
+.twitter-card{
+    grid-area: card;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      
+.my-grid {
+    display: grid;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+    "header header header header"
+    ". . twitter-card . .";
+}
+
 }

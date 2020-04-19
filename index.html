@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&family=Raleway&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
   <!-- moved Rachels JQuery link here -->
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -32,15 +31,26 @@
 </head>
 
 <body>
-  <!-- added a navbar, can include links to DC, VA or MD "additional info" -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Home</a>
-    <a class="navbar-brand" href="#">|</a>
-    <a class="navbar-brand" href="washingtonDC.html">Washington, D.C</a>
-    <a class="navbar-brand" href="#">|</a>
-    <a class="navbar-brand" href="virginia.html">Virginia</a>
-    <a class="navbar-brand" href="#">|</a>
-    <a class="navbar-brand" href="maryland.html">Maryland</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="washingtonDC.html">Washington, D.C.</a>
+        <a class="nav-item nav-link" href="maryland.html">Maryland</a>
+        <a class="nav-item nav-link" href="virginia.html">Virginia</a>
+      </div>
+    </div>
+
+    <!-- created a search bar -->
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </nav>
 
 
@@ -54,9 +64,9 @@
     <div class="row ">
       <div class="col-12">
 
-        <div class="row" id="covidStats">
+        <div id="covidStats" class="d-flex justify-content-center flex-wrap">
 
-          <div class="card covidStats Card 12 col-sm-6 col-lg-3 col-xl-2">
+          <div class="card covidStats">
             <div class="card-body" id="DC">
               <h2>Washington, D.C.</h2>
               <p id="DC-cases">Coronavirus Cases</p>
@@ -65,7 +75,7 @@
             </div>
           </div>
 
-          <div class="card covidStats Card 12 col-sm-6 col-lg-3 col-xl-2">
+          <div class="card covidStats">
             <div class="card-body" id="MD">
               <h2>Maryland</h2>
               <p id="MD-cases">Coronavirus Cases</p>
@@ -74,7 +84,7 @@
             </div>
           </div>
 
-          <div class="card covidStats Card 12 col-sm-6 col-lg-3 col-xl-2">
+          <div class="card covidStats">
             <div class="card-body" id="VA">
               <h2>Virginia</h2>
               <p id="VA-cases">Coronavirus Cases</p>

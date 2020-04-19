@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&family=Raleway&display=swap"
+    rel="stylesheet">
 
   <!-- moved Rachels JQuery link here -->
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -32,27 +33,37 @@
 
 <body>
   <!-- added a navbar, can include links to DC, VA or MD "additional info" -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Home</a>
-    <a class="navbar-brand" href="#">|</a>
-    <a class="navbar-brand" href="washingtonDC.html">Washington, D.C</a>
-    <a class="navbar-brand" href="#">|</a>
-    <a class="navbar-brand" href="virginia.html">Virginia</a>
-    <a class="navbar-brand" href="#">|</a>
-    <a class="navbar-brand" href="maryland.html">Maryland</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="washingtonDC.html">Washington, D.C.</a>
+        <a class="nav-item nav-link" href="maryland.html">Maryland</a>
+        <a class="nav-item nav-link" href="virginia.html">Virginia</a>
+      </div>
+    </div>
   </nav>
-
 
   <img src="./assets/images/vacovid.jpg" alt="virginia state, image of covid 19 virus">
 
 
   <!-- TWITTER -->
-  <div id="twitterDiv">
-    <a class="twitter-timeline" href="https://twitter.com/VDHgov?ref_src=twsrc%5Etfw">Tweets by VDHgov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </div>
-  
 
-  
+  <div class="card twitter-card" style="width: 40rem;">
+    <div class="card-body">
+      <h5 class="card-title">VDHgov Twitter</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Live VA Department of Health Twitter Feed</h6>
+      <div id="twitterDiv">
+        <a class="twitter-timeline" href="https://twitter.com/VDHgov?ref_src=twsrc%5Etfw">Tweets by VDHgov</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+  </div>
+
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
