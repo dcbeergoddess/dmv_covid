@@ -48,10 +48,6 @@ text-align: center;
     grid-area: header;
 }
 
-.my-card{
-    grid-area: carousel-image;
-}
-
 .card-title {
   text-align: center;
 }

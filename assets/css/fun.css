@@ -1,8 +1,5 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  opacity: 80%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 h1 {
@@ -15,15 +12,6 @@ h2 {
   font-size: 25px;
   padding-bottom: 10px;
   text-decoration: underline;
-}
-
-.navbar-brand {
-    font-size: 40px;
-    color: rgb(143, 187, 187) !important;
-}
-
-.navbar {
-    background-color: rgb(75, 75, 80) !important;
 }
 
 .carousel-item {
@@ -46,15 +34,24 @@ h2 {
 }
 
 .carouselComic {
-  background-image: url(https://www.bdpinternational.com/uploads/attachments/ck6axr5izcptnksqp75lnejn5-update-images4.0.130.2500.1406.max.png);
   grid-area: carousel;
   padding-top: 15px;
+  background-image: url(https://www.uptodate.com/sites/default/files/cms-files/img/covid-purple-header2.jpg);
+  ;
 }
 
 .credit {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+.credit-div{
   text-align: center;
-  color: rgb(194, 205, 209);
-  padding: 20px !important;
+  padding: 15px;
+}
+
+.nav-item{
+  font-size: 20px;
 }
 
 .my-navbar {
