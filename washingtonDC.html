@@ -13,6 +13,9 @@
   <!-- link to our CSS file -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
+   <!-- LINK TO VA SPECIFIC CSS -->
+   <link rel="stylesheet" href="assets/css/styleVA.css">
+
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -49,22 +52,59 @@
     </div>
   </nav>
 
+  <!-- creating a button to toggle dark mode on and off -->
+  <div>
+    <button type="button" class="btn btn-dark" id="darkMode">Toggle Dark Mode</button>
+  </div>
+
   <!-- when we create the new html pages we can change this to how I have the Virginia page - mostly done through CSS -->
+  <!-- Banner Photo -->
   <img src="./assets/images/dccovid.jpg" alt="district of columbia, image of covid 19 virus">
 
-  <div class="card twitter-card" style="width: 40rem;">
-    <div class="card-body">
-      <h5 class="card-title">VDHgov Twitter</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Live DC Department of Health Twitter Feed</h6>
-      <div id="twitterDiv">
-        <a class="twitter-timeline" href="  https://twitter.com/_DCHealth?s=20">Tweets by The DC Department of
-          Health</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <h2>Washington, DC Stats</h2>
+  <h1 id="lastUpdate"></h1>
+
+
+  <div class="d-flex justify-content-center flex-wrap">
+    <div class="my-chart">
+      <canvas id="myChart" width="400" height="300"></canvas>
+    </div>
+    <div class="card ml-5">
+      <div class="card-body">
+        <div id="dataDiv" class="data-grid"></div>
+        <p id="cases"></p>
+        <p id="deaths"></p>
+        <p id="recovered"></p>
       </div>
     </div>
   </div>
 
+  <div class="card">
+    <div class="card-body">
+      <!-- MORE DETAILED DATA -->
+      <div id="dataDiv" class="data-grid">
+        <p id="totalTests"></p>
+        <p id="positivePercent"></p>
+      </div>
+    </div>
+  </div>
 
+  <div class="card order">
+    <div class="card-body">
+      <a href="https://dchealth.dc.gov/sites/default/files/dc/sites/doh/page_content/attachments/2020-035-District-Government-Preparation-for-the-Coronavirus-COVID-19.pdf"
+        target="_blank" class="card-link">View Mayor Bowser's Executive Order for District’s Coronavirus Response.</a><br>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center pt-5">
+    <div class="my-border">
+      <a class="twitter-timeline" href="https://twitter.com/_DCHealth?s=20" data-width="600"
+        data-height="800">Tweets by The DC Department of Health</a></div>
+  </div>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+  </script>
+  </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -78,6 +118,8 @@
     crossorigin="anonymous"></script>
 
   <!-- link to the JS file -->
+  <script src="assets/js/moment.js"></script>
+  <script src="assets/Chartjs/Chart.js"></script>
   <script type="text/javascript" src="./assets/js/dc.js"></script>
   <!-- <script type="text/javascript" src="./assets/js/script.js"></script> -->
 </body>
