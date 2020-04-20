@@ -10,7 +10,6 @@ h1 {
 h2 {
   font-size: 25px;
   padding-bottom: 10px;
-  text-decoration: underline;
 }
 
 h3 {
@@ -98,4 +97,32 @@ text-align: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.imageDC {
+  height: 300px;
+  width: auto;
+  background-image: url("../images/dccovid.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.imageMD {
+  height: 300px;
+  width: auto;
+  background-image: url("../images/mdcovid.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.imageVA {
+  height: 300px;
+  width: auto;
+  background-image: url("../images/vacovid.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }

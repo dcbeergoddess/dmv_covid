@@ -1,7 +1,3 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
 h1 {
   color: rgb(25, 29, 29);
   font-size: 40px;
@@ -57,9 +53,40 @@ h2 {
   font-size: 20px;
 }
 
-.my-navbar {
-    grid-area: header;
+.card-group {
+  padding: 30px;
 }
+
+#card3 {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stay {
+  font-size: 20px;
+  color: rgba(255, 64, 30, 0.89);}
+
+  #links {
+  padding-top: 15px;
+  text-align: center;
+  border-top: solid;
+  border-color: rgba(140, 155, 165, 0.609);
+}
+
+#game {
+text-align: center;
+background-color: rgba(210, 226, 236, 0.363)
+}
+
+.game-font {
+  font-size: 30px;
+  color: rgba(67, 78, 85, 0.726);
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-family: 'Bellota', cursive;
+}
+
 
 .my-card{
     grid-area: carousel-image;
@@ -68,6 +95,11 @@ h2 {
 #game {
   grid-area: game;
 }
+
+.my-navbar {
+    grid-area: header;
+}
+
 
 /* added the media option so the website scales properly depening on device */
 @media only screen 
@@ -88,42 +120,3 @@ h2 {
 }
 
 }
-
-.card-group {
-  padding: 30px;
-}
-
-#card3 {
-  margin: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-.stay {
-  font-size: 20px;
-  color: rgba(255, 64, 30, 0.89);}
-
-#links {
-  padding-top: 15px;
-  text-align: center;
-  border-top: solid;
-  border-color: rgba(140, 155, 165, 0.609);
-
-  
-}
-
-#game {
-text-align: center;
-background-color: rgba(210, 226, 236, 0.363)
-
-}
-
-.game-font {
-  font-size: 30px;
-  color: rgba(67, 78, 85, 0.726);
-  padding-bottom: 20px;
-  padding-top: 30px;
-  font-family: 'Bellota', cursive;
-
-}
-
