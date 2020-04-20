@@ -11,22 +11,35 @@ The team decided to work on creating a website related to the Covid-19 pandemeic
 
 ## User Story
 
-Get detailed, up to date information regarding the Covid-19 pandemic on each state in the DMV area. On the main page user can also search by state using abbrevation code of state and return the appropriate data for any state. 
+Get detailed, up to date information regarding the Covid-19 pandemic on each state in the DMV area. On the main page user can also search other states using abbrevation code of state and return the appropriate data for any state. These searches will not be saved to local storage. When user refreshes they will be provided again for the local DMV states.
+
+Home and State pages have a dark mode option as well. This will be saved to local storage for the user when they change between pages. 
 
 Main page will provide visitor with facts from trusted api sources that gets updated on the regular for DC, MD, and VA when they first enter the page.
 
-Individual pages will provide visitor with more details on growth in cases and links to updated health government twitter feeds. Also will include other resources and links to pertinent info that applies to their area/state.  
+Individual state pages will provide visitor with more details related to DC, MD and VA.
+- View when the page was last updated
+- View a chart of the number of positive cases
+- See how many patients have been tested.
+- See the percentage of those tested that were positive.
+- View the States Executive Order.
+- View live twitter feed from the states Department of Health. 
 
-Provide FAQ page and links to support networks. To be included in the "Escape from Reality" page. 
+Take a break from the scary facts with
+**“Escape from Reality”**:
+- Take a breather and enjoy some comic relief. 
+- Use this space to help take your mind off of things. 
+- Having a panic attack? You aren’t alone! We are here to help. Click for pictures of CATS!!! 
+- Do you want to help out but aren’t sure what you can do? We have resources.
+- Have questions? Check out the FAQ Links and other support links
 
-Provide comic relief in our “Escape from Reality” page. Provides user with comic banter and games along with ideas on how to combat the stress and anxiety one can be feeling during these times.  
 
 ## Trello Link
-[Manage Group Tasks](https://trello.com/invite/b/dBNdVUVs/ca5539805af6ee3d365b73815284aa73/gwu-project-1)
+[Manage NARR Group Tasks](https://trello.com/invite/b/dBNdVUVs/ca5539805af6ee3d365b73815284aa73/gwu-project-1)
 
 ## Credits
 
-**Collaborators**
+### Collaborators
 * [@noah](https://github.com/nmhayne) :tiger: ![GitHub followers](https://img.shields.io/github/followers/nmhayne?label=Follow&style=social)
 * [@afton](https://github.com/aftongauntlett) :cat: ![GitHub followers](https://img.shields.io/github/followers/aftongauntlett?label=Follow&style=social)
 * [@rachel](https://github.com/dcbeergoddess) :dog: ![GitHub followers](https://img.shields.io/github/followers/dcbeergoddess?label=Follow&style=social)
@@ -43,13 +56,13 @@ https://thecatapi.com/
 
 ### New Technology Resources
 
-* moment.js
+* **moment.js**
     * used for changing dates called from API
-* chart.js
+* **chart.js**
     * Getting Started with Chart.js: [Traversy YouTube](https://www.youtube.com/watch?v=sE08f4iuOhA)
-* flexbox 
+* **flexbox** 
     * worked better for us to display data instead of CSS grid
-    * <div class="d-flex justify-content-center flex-wrap"></div>
+    * ("`<div class="d-flex justify-content-center flex-wrap"></div>`")
     * [Flex Resource](https://getbootstrap.com/docs/4.0/utilities/flex/)
 
 ### FAQ LINKS
