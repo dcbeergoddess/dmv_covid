@@ -11,7 +11,7 @@ The team decided to work on creating a website related to the Covid-19 pandemeic
 
 ## User Story
 
-Get detailed, up to date information regarding the Covid-19 pandemic on each state in the DMV area with one click.
+Get detailed, up to date information regarding the Covid-19 pandemic on each state in the DMV area. On the main page user can also search by state using abbrevation code of state. 
 
 Main page will provide visitor with facts from trusted api sources that gets updated on the regular for DC, MD, and VA.
 
@@ -44,11 +44,12 @@ https://thecatapi.com/
 ### New Technology Resources
 
 * moment.js
+    * used for changing dates called from API
 * chart.js
     * Getting Started with Chart.js: [Traversy YouTube](https://www.youtube.com/watch?v=sE08f4iuOhA)
 * flexbox 
     * worked better for us to display data instead of CSS grid
-    * ("'<div class="d-flex justify-content-center flex-wrap"></div>'")
+    * '<div class="d-flex justify-content-center flex-wrap"></div>'
     * [Flex Resource](https://getbootstrap.com/docs/4.0/utilities/flex/)
 
 ### FAQ LINKS
