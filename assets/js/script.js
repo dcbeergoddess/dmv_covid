@@ -114,12 +114,34 @@ function getNewState(){
     url: newURL,
     method: "GET"
   }).then(function(response){
-    stateName.text("State: "+response.state);
-    cases.text("Cases: "+response.positive);
-    deaths.text("Deaths"+response.death);
-    recovered.text("Recovered" + response.recovered);
+    stateResponse=response.state;
+    stateCase=response.positive;
+    stateDeath=response.death;
+    stateRecovered=response.recovered;
+    
+    console.log(stateResponse);
+    var stateExpanded=unAbrevState(stateResponse);
+    console.log(stateExpanded);
+    stateName.text(stateExpanded);
     
     
+    if(stateCase===null){
+      cases.text("No data");
+    } else{
+      cases.text("Cases: " + stateCase);
+    }
+    
+    if(stateDeath===null){
+      deaths.text("No data");
+    } else{
+      deaths.text("Deaths: " + stateDeath);
+    }
+    
+    if(stateRecovered===null){
+      recovered.text("No data");
+    } else{
+      recovered.text("Recovered: " + stateRecovered);
+    }
     
     
   });
@@ -130,5 +152,186 @@ function getNewState(){
 
 
 
-// follow the existing example to add the data to the card
+
+function unAbrevState(input){
+  // loop through states, find where full name = xxxxxx and return abbrev
+  for ( var i=0; i<states.length; i++ ){
+    if( states[i].abbrev === input ){
+      return states[i].fullname;
+    } 
+  }
+}
+
+
+var states = [
+{abbrev: "AK", fullname: "Alaska"},
+{ abbrev: "AS", fullname:  "American Samoa"},
+{abbrev: "AZ", fullname: 
+"Arizona"},
+{  abbrev: "AR", fullname: 
+"Arkansas"},
+{ abbrev: "CA", fullname: 
+"California"},
+{ abbrev: "CO", fullname: 
+"Colorado"},
+{abbrev: "CT", fullname: 
+"Connecticut"},
+{ abbrev: "DE", fullname: 
+"Delaware"},
+{ abbrev: "DC", fullname: 
+"District Of Columbia"},
+{ abbrev: "FM", fullname: 
+"Federated States Of Micronesia"},
+{ abbrev: "FL", fullname: 
+"Florida"},
+{ abbrev: "GA", fullname: 
+"Georgia"},
+{ abbrev: "GU", fullname: 
+"Guam"},
+{ abbrev: "HI", fullname: 
+"Hawaii"},
+{ abbrev: "ID", fullname: 
+"Idaho"},
+{ abbrev: "IL", fullname: 
+"Illinois"},
+{ abbrev: "IN", fullname: 
+"Indiana"},
+{ abbrev: "IA", fullname: 
+"Iowa"},
+{ abbrev: "KS", fullname: 
+"Kansas"},
+{ abbrev: "KY", fullname: 
+"Kentucky"},
+{ abbrev: "LA", fullname: 
+"Louisiana"},
+{ abbrev: "ME", fullname: 
+"Maine"},
+{ abbrev: "MH", fullname: 
+"Marshall Islands"},
+{ abbrev: "MD", fullname: 
+"Maryland"},
+{ abbrev: "MA", fullname: 
+"Massachusetts"},
+{ abbrev: "MI", fullname: 
+"Michigan"},
+{ abbrev: "MN", fullname: 
+"Minnesota"},
+{ abbrev: "MS", fullname: 
+"Mississippi"},
+{ abbrev: "MO", fullname: 
+"Missouri"},
+{ abbrev: "MT", fullname: 
+"Montana"},
+{ abbrev: "NE", fullname: 
+"Nebraska"},
+{ abbrev: "NV", fullname: 
+"Nevada"},
+{ abbrev: "NH", fullname: 
+"New Hampshire"},
+{ abbrev: "NJ", fullname: 
+"New Jersey"},
+{ abbrev: "NM", fullname: 
+"New Mexico"},
+{ abbrev: "NY", fullname: 
+"New York"},
+{ abbrev: "NC", fullname: 
+"North Carolina"},
+{ abbrev: "ND", fullname: 
+"North Dakota"},
+{ abbrev: "MP", fullname: 
+"Northern Mariana Islands"},
+{ abbrev: "OH", fullname: 
+"Ohio"},
+{ abbrev: "OK", fullname: 
+"Oklahoma"},
+{ abbrev: "OR", fullname: 
+"Oregon"},
+{ abbrev: "PW", fullname: 
+"Palau"},
+{ abbrev: "PA", fullname: 
+"Pennsylvania"},
+{ abbrev: "PR", fullname: 
+"Puerto Rico"},
+{ abbrev: "RI", fullname: 
+"Rhode Island"},
+{ abbrev: "SC", fullname: 
+"South Carolina"},
+{ abbrev: "SD", fullname: 
+"South Dakota"},
+{ abbrev: "TN", fullname: 
+"Tennessee"},
+{ abbrev: "TX", fullname: 
+"Texas"},
+{abbrev: "UT", fullname: 
+"Utah"},
+{ abbrev: "VT", fullname: 
+"Vermont"},
+{ abbrev: "VI", fullname: 
+"Virgin Islands"},
+{ abbrev: "VA", fullname: 
+"Virginia"},
+{ abbrev: "WA", fullname: 
+"Washington"},
+{ abbrev: "WV", fullname: 
+"West Virginia"},
+{ abbrev: "WI", fullname: 
+"Wisconsin"},
+{abbrev: "WY", fullname: 
+"Wyoming"}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
