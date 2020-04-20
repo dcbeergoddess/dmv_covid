@@ -6,7 +6,7 @@
 
 ## Description
 
-The team decided to work on creating a website related to the Covid-19 pandemeic and providing the user with current and local information while also bringing a fun aspect to balance out the grim details of the current situation. 
+The team decided to work on creating a website related to the Covid-19 pandemeic and providing the user with current and local information while also bringing a fun aspect to balance out the grim details regarding the pandemic. 
 
 
 ## User Story
@@ -17,7 +17,7 @@ Main page will provide visitor with facts from trusted api sources that gets upd
 
 Individual pages will provide visitor with more details on growth in cases and links to updated health government twitter feeds. Also will include other resources and links to pertinent info that applies to their area/state.  
 
-Provide FAQ page and links to support networks. 
+Provide FAQ page and links to support networks. To be included in the "Escape from Reality" page. 
 
 Provide comic relief in our “Escape from Reality” page. Provides user with comic banter and games along with ideas on how to combat the stress and anxiety one can be feeling during these times.  
 
@@ -27,10 +27,10 @@ Provide comic relief in our “Escape from Reality” page. Provides user with c
 ## Credits
 
 **Collaborators**
-* [@noah  ](https://github.com/nmhayne)![GitHub followers](https://img.shields.io/github/followers/nmhayne?label=Follow&style=social)
-* [@afton  ](https://github.com/aftongauntlett)![GitHub followers](https://img.shields.io/github/followers/aftongauntlett?label=Follow&style=social)
-* [@rachel  ](https://github.com/dcbeergoddess) ![GitHub followers](https://img.shields.io/github/followers/dcbeergoddess?label=Follow&style=social)
-* [@raymond ](https://github.com/rayfor1)![GitHub followers](https://img.shields.io/github/followers/rayfor1?label=Follow&style=social)
+* [@noah](https://github.com/nmhayne) :tiger: ![GitHub followers](https://img.shields.io/github/followers/nmhayne?label=Follow&style=social)
+* [@afton](https://github.com/aftongauntlett) :cat: ![GitHub followers](https://img.shields.io/github/followers/aftongauntlett?label=Follow&style=social)
+* [@rachel](https://github.com/dcbeergoddess) :dog: ![GitHub followers](https://img.shields.io/github/followers/dcbeergoddess?label=Follow&style=social)
+* [@raymond](https://github.com/rayfor1) :dragon_face: ![GitHub followers](https://img.shields.io/github/followers/rayfor1?label=Follow&style=social)
 
 
 ### API Resources
