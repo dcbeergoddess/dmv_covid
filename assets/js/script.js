@@ -1,3 +1,15 @@
+// LOCAL STORAGE DARK MODE
+checkDarkMode();
+function checkDarkMode(){
+  if(localStorage.getItem("darkmode")==="true"){
+    var element=document.body;
+    element.classList.toggle("dark-mode");
+    localStorage.setItem("dark-mode","true");
+  }
+  console.log(localStorage.getItem("darkmode")); 
+}
+
+
 
 // querySTATE
 var queryDC = "https://covidtracking.com/api/states?state=DC"
@@ -79,6 +91,13 @@ $.ajax({
 $("#darkMode").click(function () {
   var element = document.body;
   element.classList.toggle("dark-mode");
+  if(element.classList.length!=0){
+    console.log("darkmode on");
+    localStorage.setItem("darkmode","true")
+  } else{
+    console.log("darkmode off");
+    localStorage.setItem("darkmode", "false")
+  }
 });
 
 
