@@ -1,5 +1,6 @@
 body {
-  font-family: 'Raleway', sans-serif;}
+  font-family: 'Open Sans', sans-serif;
+}
 
 h1 {
   color: red;
@@ -17,14 +18,14 @@ padding-top: 20px;
 }
 
 #covidStats {
-  justify-content: center;
+text-align: center;
 }
 
 .covidStats {
   margin: 15px;
+  width: 350px;
 }
 
-/* added padding here to make everything in this div not flush with the left side of the screen, looks nicer */
 #stateCards {
   padding-left: 15px;
 }
@@ -39,24 +40,40 @@ padding-top: 20px;
   font-size: 20px;
 }
 
-.carouselComic {
-height: auto;
-width: auto;
+.nav-item{
+  font-size: 20px;
 }
 
-.carousel-item {
-  padding: 25px;
+.my-navbar {
+    grid-area: header;
 }
 
-.carousel img {
-  margin: auto;
+.card-title {
+  text-align: center;
 }
 
-.carousel-control-prev-icon {
-  background-color: black;
-  
+.card-subtitle {
+  text-align: center;
 }
 
-.carousel-control-next-icon {
-  background-color: black;
+.twitter-card{
+    grid-area: card;
+}
+
+/* media for sizing on different devices */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+/* this is for using css grid layout */
+.my-grid {
+    display: grid;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+    "header header header header"
+    ". . twitter-card . .";
+}
+
 }

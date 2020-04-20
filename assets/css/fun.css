@@ -1,0 +1,130 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  color: rgb(25, 29, 29);
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-family: 'Bellota', cursive;
+
+
+}
+
+h2 {
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.carousel-item {
+  padding: 25px;
+}
+
+.carousel img {
+  margin: auto;
+}
+
+.carousel-control-prev-icon {
+  background-color: black;
+  padding: 25px;
+
+}
+
+.carousel-control-next-icon {
+  background-color: black;
+  padding: 25px;
+}
+
+.carouselComic {
+  grid-area: carousel;
+  padding-top: 15px;
+  background-image: url(https://www.uptodate.com/sites/default/files/cms-files/img/covid-purple-header2.jpg);
+  ;
+}
+
+.credit {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+.credit-div{
+  text-align: center;
+  padding: 15px;
+}
+
+.nav-item{
+  font-size: 20px;
+}
+
+.my-navbar {
+    grid-area: header;
+}
+
+.my-card{
+    grid-area: carousel-image;
+}
+
+#game {
+  grid-area: game;
+}
+
+/* added the media option so the website scales properly depening on device */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      
+    /* using this my-grid class for css grid layout (grid template) and view width  */
+.my-grid {
+    display: grid;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+    "header header header header"
+    "carousel carousel carousel carousel-image"
+    ". . game . ."
+    
+}
+
+}
+
+.card-group {
+  padding: 30px;
+}
+
+#card3 {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stay {
+  font-size: 20px;
+  color: rgba(255, 64, 30, 0.89);}
+
+#links {
+  padding-top: 15px;
+  text-align: center;
+  border-top: solid;
+  border-color: rgba(140, 155, 165, 0.609);
+
+  
+}
+
+#game {
+text-align: center;
+background-color: rgba(210, 226, 236, 0.363)
+
+}
+
+.game-font {
+  font-size: 30px;
+  color: rgba(67, 78, 85, 0.726);
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-family: 'Bellota', cursive;
+
+}
