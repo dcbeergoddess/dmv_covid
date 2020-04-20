@@ -11,7 +11,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!-- link to our CSS file -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/styleVA.css" />
 
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
@@ -45,14 +45,45 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-item nav-link" href="washingtonDC.html">Washington, D.C. |</a>
+        <a class="nav-item nav-link" href="maryland.html">Maryland |</a>
         <a class="nav-item nav-link" href="virginia.html">Virginia |</a>
         <a class="nav-item nav-link" href="fun.html">Escape from Reality |</a>
-
       </div>
     </div>
   </nav>
 
-  <img src = "./assets/images/mdcovid.jpg" alt="MD state flag; image of COVID-19 virus">
+  <div>
+    <button type="button" class="btn btn-dark" id="darkMode">Toggle Dark Mode</button>
+  </div>
+
+  <div class="imageMD"></div>
+  
+  <h2>Maryland Stats</h2>
+ <h1 id="lastUpdate"></h1>
+
+ <div class="d-flex justify-content-center flex-wrap">
+  <div class="my-chart">
+    <canvas id="myChart" width="400" height="300"></canvas>
+  </div>
+  <div class="card ml-5">
+    <div class="card-body">
+      <div id="dataDiv" class="data-grid"></div>
+      <p id="cases"></p>
+      <p id="deaths"></p>
+      <p id="recovered"></p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <!-- MORE DETAILED DATA -->
+    <div id="dataDiv" class="data-grid">
+      <p id="totalTests"></p>
+      <p id="positivePercent"></p>
+    </div>
+  </div>
+</div>
 
    <!-- Grid for BASIC INFO API CALL -->
    <h1 id="lastUpdate"></h1>
@@ -69,54 +100,34 @@
    <!-- Make INFO for Daily API CALL HERE Possibly a chart -->
    <h1 id="updatesDay"></h1>
 
-   <h2>Maryland Stats</h2>
-  <h1 id="lastUpdate"></h1>
-
-  <div class="d-flex justify-content-center flex-wrap">
-    <div class="my-chart">
-      <canvas id="myChart" width="400" height="300"></canvas>
-    </div>
-    <div class="card ml-5">
-      <div class="card-body">
-        <div id="dataDiv" class="data-grid"></div>
-        <p id="cases"></p>
-        <p id="deaths"></p>
-        <p id="recovered"></p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
+  <!-- Executive Order -->
+  <div class="card order">
     <div class="card-body">
-      <!-- MORE DETAILED DATA -->
-      <div id="dataDiv" class="data-grid">
-        <p id="totalTests"></p>
-        <p id="positivePercent"></p>
-      </div>
+      <a href="https://governor.maryland.gov/wp-content/uploads/2020/03/Proclamation-COVID-19.pdf"
+        target="_blank" class="card-link">View the Executive Order from the Governor of Maryland here.</a><br>
     </div>
   </div>
 
 
-  <!-- MD COVID-19 website: daily number updates: -->
-  <div id="my-div">
-    <iframe src="https://coronavirus.maryland.gov" id="my-iframe" scrolling="no" frameborder="0"  position = "absolute"
-    top = "-1500px" left = "500px" height="960px" width="600px"></iframe>
-  </div>
-       <!-- Executive Order -->
-       <iframe
-         src="https://governor.maryland.gov/wp-content/uploads/2020/03/Proclamation-COVID-19.pdf"
-         frameborder="0" height="800px" width="600px"></iframe>
-       <!-- Twitter Updates -->
-       <div class="card twitter-card" style="width: 40rem;">
-         <div class="card-body">
-           <h5 class="card-title">MD DOH Twitter</h5>
-           <h6 class="card-subtitle mb-2 text-muted">Live MD Department of Health Twitter Feed</h6>
-           <div id="twitterDiv">
-             <a class="twitter-timeline" href="https://twitter.com/MDHealthDept">Tweets by the State of Maryland Department of Health</a>
-             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-           </div>
-         </div>
-       </div>
+    <!-- Twitter -->
+       <div class="d-flex justify-content-center pt-5">
+        <div class="my-border">
+          <a class="twitter-timeline" href="https://twitter.com/MDHealthDept" data-width="600"
+            data-height="800">MD DOH Tweets</a></div>
+      </div>
+    
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+      </script>
+      </div>
+<br>
+       <!-- MD COVID-19 website: daily number updates: -->
+       <div class="d-flex justify-content-center">
+        <div id="my-div">
+        <iframe src="https://coronavirus.maryland.gov" id="my-iframe" scrolling="no" frameborder="0"  position = "absolute"
+        top = "-1500px" left = "500px" height="960px" width="600px"></iframe>
+      </div>
+      </div>  
+
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -148,7 +159,7 @@
     crossorigin="anonymous"></script>
 
   <!-- link to the JS file -->
-  <script type="text/javascript" src="./assets/js/script.js"></script>
+  <!-- <script type="text/javascript" src="./assets/js/script.js"></script> -->
 
 </body>
 

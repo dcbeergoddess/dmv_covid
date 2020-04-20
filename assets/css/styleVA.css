@@ -51,35 +51,6 @@ h2 {
     padding-left: 20px;
 }
 
-.image {
-    height: 300px;
-    width: auto;
-    background-image: url("../images/vacovid.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* we will use these two for the DC and MD CSS files */
-/* .image {
-    height: 300px;
-    width: auto;
-    background-image: url("../images/dccovid.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.image {
-    height: 300px;
-    width: auto;
-    background-image: url("../images/mdcovid.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
-
 .dark-mode {
     background-color: rgb(26, 26, 26);
     color: white;
@@ -120,3 +91,32 @@ font-size: 30px;
     font-weight: 600;
 
 }
+
+.imageDC {
+    height: 300px;
+    width: auto;
+    background-image: url("../images/dccovid.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .imageMD {
+    height: 300px;
+    width: auto;
+    background-image: url("../images/mdcovid.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .imageVA {
+    height: 300px;
+    width: auto;
+    background-image: url("../images/vacovid.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
