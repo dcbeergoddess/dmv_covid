@@ -55,17 +55,18 @@ text-align: center;
   text-align: center;
 }
 
+/* 
 .twitter-card{
     grid-area: card;
 }
 
-/* media for sizing on different devices */
+media for sizing on different devices
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-/* this is for using css grid layout */
+this is for using css grid layout
 .my-grid {
     display: grid;
     grid-template-columns: 24vw 24vw 24vw 24vw;
@@ -75,7 +76,7 @@ text-align: center;
     ". . twitter-card . .";
 }
 
-}
+} */
 
 .dark-mode {
     background-color: rgb(26, 26, 26);
