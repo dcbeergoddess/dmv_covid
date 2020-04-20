@@ -70,17 +70,10 @@
 
   <div class="image"></div>
 
-
-<!-- FORM FOR STATE -->
-<form class="form-inline my-2 my-lg-0">
-  <input id="stateInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-  <button id="searchButton" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-</form>
-
   <!-- created a card for the 3 states, we can have the live info update to these cards from the API -->
   <div id="stateCards">
     <h1>Covid-19</h1>
-    <p>Live Covid-19 updates for the DC, Maryland and Virginia metro areas</p>
+    <p>Live Covid-19 updates for Maryland, Virginia and Washington D.C.</p>
 
 
     <div id="covidStats" class="d-flex justify-content-center flex-wrap">
@@ -114,13 +107,17 @@
       </div>
     </div>
   </div>
-
   
+ <!-- FORM FOR STATE -->
+<div id="searchBar" >
+  <h2>Search other states by abbreviation</h2>
   <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <div id="searchButton">
+    <input id="stateInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-
+  </div>
+  </form> 
+</form>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
