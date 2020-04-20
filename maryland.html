@@ -31,10 +31,10 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-
   <title>Covid-19: Maryland Information</title>
 
 <body>
+  
   <!-- added a navbar, can include links to DC, VA or MD "additional info" -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Home</a>
@@ -52,7 +52,7 @@
     </div>
   </nav>
 
-  <img src="./assets/images/mdcovid.jpg" alt="MD state flag; image of COVID-19 virus">
+  <img src = "./assets/images/mdcovid.jpg" alt="MD state flag; image of COVID-19 virus">
 
    <!-- Grid for BASIC INFO API CALL -->
    <h1 id="lastUpdate"></h1>
@@ -94,6 +94,13 @@
         <p id="positivePercent"></p>
       </div>
     </div>
+  </div>
+
+
+  <!-- MD COVID-19 website: daily number updates: -->
+  <div id="my-div">
+    <iframe src="https://coronavirus.maryland.gov" id="my-iframe" scrolling="no" frameborder="0"  position = "absolute"
+    top = "-1500px" left = "500px" height="960px" width="600px"></iframe>
   </div>
        <!-- Executive Order -->
        <iframe
@@ -142,7 +149,6 @@
 
   <!-- link to the JS file -->
   <script type="text/javascript" src="./assets/js/script.js"></script>
-
 
 </body>
 
