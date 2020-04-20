@@ -1,5 +1,8 @@
 # GROUP NARR Project_01
 
+<!-- playing around for badges -->
+
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/dcbeergoddess/project_01)
 
 ## Description
 
@@ -24,10 +27,10 @@ Provide comic relief in our “Escape from Reality” page. Provides user with c
 ## Credits
 
 **Collaborators**
-*[@noah](https://github.com/nmhayne)
-*[@afton](https://github.com/aftongauntlett)
-*[@rachel](https://github.com/dcbeergoddess)
-*[@raymond](https://github.com/rayfor1)
+* [@noah](https://github.com/nmhayne)
+* [@afton](https://github.com/aftongauntlett)
+* [@rachel](https://github.com/dcbeergoddess) (https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
+* [@raymond](https://github.com/rayfor1)
 
 
 ### API Resources
@@ -42,7 +45,30 @@ https://thecatapi.com/
 
 * moment.js
 * chart.js
-    * Getting Started with Chart.js [Traversy YouTube](https://www.youtube.com/watch?v=sE08f4iuOhA)
+    * Getting Started with Chart.js: [Traversy YouTube](https://www.youtube.com/watch?v=sE08f4iuOhA)
+* flexbox 
+    * worked better for us to display data instead of CSS grid
+    * ("'<div class="d-flex justify-content-center flex-wrap"></div>'")
+    * [Flex Resource](https://getbootstrap.com/docs/4.0/utilities/flex/)
+
+### FAQ LINKS
+
+* [DC General](https://coronavirus.dc.gov/page/covid-19-faqs)
+* [DC Unemployment](https://does.dc.gov/page/unemployment-compensation)
+* [MD General](https://coronavirus.maryland.gov/#FAQ)
+* [MD Unemployment](https://www.dllr.state.md.us/employment/uicovidfaqs.shtml)
+* [VA General](http://www.vdh.virginia.gov/coronavirus/frequently-asked-questions/)
+* [VA Unemployment](https://www.vec.virginia.gov/faqs/general-unemployment-insurance-questions)
+
+
+### Fun Links
+
+* [Relaxing Game](https://www.addictinggames.com/embed/html5-games/23807)
+* [Folding at Home](https://foldingathome.org/covid19/)
+* [Print 3D Masks](https://www.3dsystems.com/covid-19-response)
+
+
+
 
 ## Pseudo Code
 
@@ -58,10 +84,17 @@ https://thecatapi.com/
     - "https://covidtracking.com/api/states?state=VA"
 4. push info in cards
     - decide what info to include
-
-3. pulling info from covid API - current uptodate 
-4. display info on main page
+5. pulling info from covid API - current uptodate 
+6. display info on main page
 7. comic relief page with more covid resources/survival 
+    1. include cat api
+    2. faq links
+    3. support links
+    4. fun game
+
+## License
+
+The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
 
 
 
