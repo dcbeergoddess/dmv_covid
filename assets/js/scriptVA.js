@@ -1,3 +1,15 @@
+// DARK MODE LOCAL STORAGE
+checkDarkMode();
+function checkDarkMode(){
+  if(localStorage.getItem("darkmode")==="true"){
+    var element=document.body;
+    element.classList.toggle("dark-mode");
+    localStorage.setItem("dark-mode","true");
+  }
+  console.log(localStorage.getItem("darkmode")); 
+}
+
+
 // AJAX CALL FOR BASIC INFO
 
 $.ajax({
