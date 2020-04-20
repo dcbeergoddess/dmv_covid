@@ -34,7 +34,7 @@
   <title>Covid-19: Maryland Information</title>
 
 <body>
-  
+
   <!-- added a navbar, can include links to DC, VA or MD "additional info" -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="index.html">Home</a>
@@ -57,76 +57,76 @@
   </div>
 
   <div class="imageMD"></div>
-  
-  <h2>Maryland Stats</h2>
- <h1 id="lastUpdate"></h1>
 
- <div class="d-flex justify-content-center flex-wrap">
-  <div class="my-chart">
-    <canvas id="myChart" width="400" height="300"></canvas>
+  <h2>Maryland Stats</h2>
+  <h1 id="lastUpdate"></h1>
+
+  <div class="d-flex justify-content-center flex-wrap">
+    <div class="my-chart">
+      <canvas id="myChart" width="400" height="300"></canvas>
+    </div>
+    <div class="card ml-5">
+      <div class="card-body">
+        <div id="dataDiv" class="data-grid"></div>
+        <p id="cases"></p>
+        <p id="deaths"></p>
+        <p id="recovered"></p>
+      </div>
+    </div>
   </div>
-  <div class="card ml-5">
+
+  <div class="card">
     <div class="card-body">
-      <div id="dataDiv" class="data-grid"></div>
+      <!-- MORE DETAILED DATA -->
+      <div id="dataDiv" class="data-grid">
+        <p id="totalTests"></p>
+        <p id="positivePercent"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Grid for BASIC INFO API CALL -->
+  <h1 id="lastUpdate"></h1>
+  <div class="page-grid">
+    <!-- MORE DETAILED DATA -->
+    <div id="dataDiv" class="data-grid">
+      <p id="totalTests"></p>
+      <p id="positivePercent"></p>
       <p id="cases"></p>
       <p id="deaths"></p>
       <p id="recovered"></p>
     </div>
   </div>
-</div>
-
-<div class="card">
-  <div class="card-body">
-    <!-- MORE DETAILED DATA -->
-    <div id="dataDiv" class="data-grid">
-      <p id="totalTests"></p>
-      <p id="positivePercent"></p>
-    </div>
-  </div>
-</div>
-
-   <!-- Grid for BASIC INFO API CALL -->
-   <h1 id="lastUpdate"></h1>
-   <div class="page-grid">
-     <!-- MORE DETAILED DATA -->
-     <div id="dataDiv" class="data-grid">
-       <p id="totalTests"></p>
-       <p id="positivePercent"></p>
-       <p id="cases"></p>
-       <p id="deaths"></p>
-       <p id="recovered"></p>
-   </div>  
-   </div>  
-   <!-- Make INFO for Daily API CALL HERE Possibly a chart -->
-   <h1 id="updatesDay"></h1>
+  <!-- Make INFO for Daily API CALL HERE Possibly a chart -->
+  <h1 id="updatesDay"></h1>
 
   <!-- Executive Order -->
   <div class="card order">
     <div class="card-body">
-      <a href="https://governor.maryland.gov/wp-content/uploads/2020/03/Proclamation-COVID-19.pdf"
-        target="_blank" class="card-link">View the Executive Order from the Governor of Maryland here.</a><br>
+      <a href="https://governor.maryland.gov/wp-content/uploads/2020/03/Proclamation-COVID-19.pdf" target="_blank"
+        class="card-link">View the Executive Order from the Governor of Maryland here.</a><br>
     </div>
   </div>
 
 
-    <!-- Twitter -->
-       <div class="d-flex justify-content-center pt-5">
-        <div class="my-border">
-          <a class="twitter-timeline" href="https://twitter.com/MDHealthDept" data-width="600"
-            data-height="800">MD DOH Tweets</a></div>
-      </div>
-    
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-      </script>
-      </div>
-<br>
-       <!-- MD COVID-19 website: daily number updates: -->
-       <div class="d-flex justify-content-center">
-        <div id="my-div">
-        <iframe src="https://coronavirus.maryland.gov" id="my-iframe" scrolling="no" frameborder="0"  position = "absolute"
-        top = "-1500px" left = "500px" height="960px" width="600px"></iframe>
-      </div>
-      </div>  
+  <!-- Twitter -->
+  <div class="d-flex justify-content-center pt-5">
+    <div class="my-border">
+      <a class="twitter-timeline" href="https://twitter.com/MDHealthDept" data-width="600" data-height="800">MD DOH
+        Tweets</a></div>
+  </div>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+  </script>
+  </div>
+  <br>
+  <!-- MD COVID-19 website: daily number updates: -->
+  <div class="d-flex justify-content-center">
+    <div id="my-div">
+      <iframe src="https://coronavirus.maryland.gov" id="my-iframe" scrolling="no" frameborder="0" position="absolute"
+        top="-1500px" left="500px" height="960px" width="600px"></iframe>
+    </div>
+  </div>
 
 
 
@@ -139,7 +139,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-          crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 
 
   <!-- link to the JS file -->
@@ -160,6 +160,10 @@
 
   <!-- link to the JS file -->
   <!-- <script type="text/javascript" src="./assets/js/script.js"></script> -->
+
+  <footer>
+    <p class="copyright"> &copy; GWU Project NARR</p>
+  </footer>
 
 </body>
 
