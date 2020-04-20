@@ -68,6 +68,33 @@
    </div>  
    <!-- Make INFO for Daily API CALL HERE Possibly a chart -->
    <h1 id="updatesDay"></h1>
+
+   <h2>Maryland Stats</h2>
+  <h1 id="lastUpdate"></h1>
+
+  <div class="d-flex justify-content-center flex-wrap">
+    <div class="my-chart">
+      <canvas id="myChart" width="400" height="300"></canvas>
+    </div>
+    <div class="card ml-5">
+      <div class="card-body">
+        <div id="dataDiv" class="data-grid"></div>
+        <p id="cases"></p>
+        <p id="deaths"></p>
+        <p id="recovered"></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-body">
+      <!-- MORE DETAILED DATA -->
+      <div id="dataDiv" class="data-grid">
+        <p id="totalTests"></p>
+        <p id="positivePercent"></p>
+      </div>
+    </div>
+  </div>
        <!-- Executive Order -->
        <iframe
          src="https://governor.maryland.gov/wp-content/uploads/2020/03/Proclamation-COVID-19.pdf"
