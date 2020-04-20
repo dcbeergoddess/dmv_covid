@@ -1,12 +1,8 @@
-
-
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
      margin: 20px;
 }
-
-
 
 .data-grid{
     display: grid;
@@ -21,3 +17,106 @@
     margin: 20px;
 }
 
+h1 {
+    font-size: 35px;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+     font-size: 35px;
+    text-align: center;
+    color: rgb(66, 66, 66);
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dark-mode > h2 {
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: rgb(26, 26, 26) !important;
+    color: white;
+}
+
+.nav-item{
+  font-size: 20px;
+}
+
+.my-chart {
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+.image {
+    height: 300px;
+    width: auto;
+    background-image: url("../images/vacovid.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* we will use these two for the DC and MD CSS files */
+/* .image {
+    height: 300px;
+    width: auto;
+    background-image: url("../images/dccovid.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image {
+    height: 300px;
+    width: auto;
+    background-image: url("../images/mdcovid.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+
+.dark-mode {
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+.btn {
+    margin: 20px;
+}
+
+.twitter-timeline {
+    text-align: center;
+}
+
+.order {
+text-align: center !important;
+font-size: 30px;
+}
+
+@media only screen 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      .my-chart {
+    width: 85% !important;
+}
+      
+  }
+
+  .my-border{
+      border-bottom: 1px solid black;
+      width: 600px;
+  }
+
+#totalTests {
+    font-weight: 600;
+}
+
+#positivePercent {
+    font-weight: 600;
+
+}

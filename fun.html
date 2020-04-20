@@ -46,6 +46,8 @@
             </div>
         </div>
     </nav>
+
+
     <!-- created a header and used css to style it -->
     <h1>Questions? Losing your mind? Want to help?</h1>
 
@@ -54,13 +56,12 @@
 
     <div class="card-deck">
         <div id="card3" class="card">
-            <img class="card-img-top" src="./assets/images/faq.png" alt="Card image cap">
+            <img class="card-img-top" src="./assets/images/faq.png" alt="Frequently Asked Questions logo">
             <div class="card-body">
                 <h5 class="card-title">I have so many questions!</h5>
                 <p class="card-text">Not even Google can help me anymore, what should I do? Who should I ask? How did I
                     get here?</p>
                 <div id="links">
-                    <br>
                     <p><a id="link-text" href="https://lmgtfy.com/?q=better+covid+faq" target="_blank"
                             class="card-link">Try this</a>
                     </p>
@@ -69,19 +70,26 @@
         </div>
 
         <div id="card3" class="card">
-            <img class="card-img-top" src="./assets/images/panic.jpg" alt="Card image cap">
+            <img class="card-img-top" id="catPicture" src="./assets/images/panic.jpg"
+                alt="Woman having a panic attack (also cats)">
             <div class="card-body">
-                <h5 class="card-title">I keep having panic attacks, is this normal?</h5>
-                <p class="card-text">Yes! These are scary times and we are only human. Check out these distractions
-                    below to help take your mind off of things.</p>
-                <div id="links">
-                    <a href="https://mynoise.net/" target="_blank" class="card-link">Relaxing sounds</a><br>
+                <div class="cardCat">
+                    <h5 class="card-title">I keep having panic attacks, is this normal?</h5>
+                    <p class="card-text">Yes! These are scary times and we are only human. Click the button below to
+                        help
+                        take your mind off of all of this mess!</p>
                 </div>
+                <div>
+                    <button type="button" class="btn btn-dark" id="cat-API">Click me!</button>
+                </div>
+                <!-- <div id="links">
+                    <a href="https://mynoise.net/" target="_blank" class="card-link">Relaxing sounds</a><br>
+                </div> -->
             </div>
         </div>
 
         <div id="card3" class="card">
-            <img class="card-img-top" src="./assets/images/3d2.jpeg" alt="Card image cap">
+            <img class="card-img-top" src="./assets/images/3d2.jpeg" alt="3D printed masks">
             <div class="card-body">
                 <h5 class="card-title">How can I help?</h5>
                 <p class="card-text">There are plenty of ways you can help support those on the front lines with

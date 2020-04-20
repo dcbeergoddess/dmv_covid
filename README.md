@@ -99,8 +99,9 @@ brainstorm what to push into website
 
 ### Important Info for State Specific Sites
 - DC - Rachel
-- VA - NOAH
+- VA - Noah
 - MD - Raymond
+- CSS - Afton
 - Daily Increases in Cases
 - Incorporate twitter updates
 - links to sites with resources

@@ -77,3 +77,25 @@ text-align: center;
 }
 
 }
+
+.dark-mode {
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+#darkMode {
+  margin: 20px;
+}
+
+.dark-mode .card {
+  background-color: rgb(26, 26, 26);
+}
+
+.image {
+    height: 300px;
+    width: auto;
+    background-image: url("../images/covid.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
