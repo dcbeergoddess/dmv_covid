@@ -115,9 +115,13 @@ text-align: center;
 #searchButton {
  margin: 0 auto;
  text-align: center;
-
-
   }
+
+  #searchButtonAlign {
+    margin: 0 auto;
+    text-align: center;
+     }
+   
 
 
 /* 
