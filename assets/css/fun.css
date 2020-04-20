@@ -24,7 +24,6 @@ h2 {
 .carousel-control-prev-icon {
   background-color: black;
   padding: 25px;
-
 }
 
 .carousel-control-next-icon {
@@ -87,36 +86,9 @@ background-color: rgba(210, 226, 236, 0.363)
   font-family: 'Bellota', cursive;
 }
 
+.copyright {
+       padding-top: 20px;
+       padding-bottom: 10px;
+       text-align: center;
+     }
 
-/* .my-card{
-    grid-area: carousel-image;
-}
-
-#game {
-  grid-area: game;
-}
-
-.my-navbar {
-    grid-area: header;
-} */
-
-
-/* added the media option so the website scales properly depening on device */
-/* @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) { */
-      
-    /* using this my-grid class for css grid layout (grid template) and view width  */
-/* .my-grid {
-    display: grid;
-    grid-template-columns: 24vw 24vw 24vw 24vw;
-    grid-template-rows: 50px auto;
-    grid-template-areas:
-    "header header header header"
-    "carousel carousel carousel carousel-image"
-    ". . game . ."
-    
-}
-
-} */

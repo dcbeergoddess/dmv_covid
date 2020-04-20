@@ -121,6 +121,12 @@ text-align: center;
     margin: 0 auto;
     text-align: center;
      }
+
+     .copyright {
+       padding-top: 20px;
+       padding-bottom: 10px;
+       text-align: center;
+     }
    
 
 

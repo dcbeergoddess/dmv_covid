@@ -119,4 +119,9 @@ font-size: 30px;
     background-repeat: no-repeat;
     background-position: center;
   }
-  
+
+.copyright {
+       padding-top: 20px;
+       padding-bottom: 10px;
+       text-align: center;
+     }
