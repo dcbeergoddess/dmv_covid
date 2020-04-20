@@ -14,16 +14,18 @@ $("#cat-API").click(function () {
         method: "GET"
     })
         .then(function (response) {
-            console.log(response[0].url);
             // set attribute
             $("#catPicture").attr("src", response[0].url)
 
         });
     // added page ++ so the var will change images
     page++
-
 });
 
+$("#cat-API").click(function () {
+    $(".cardCat").empty();
+    $(".cardCat").append("<p>meow</p>");
+});
 
 
 $("#darkMode").click(function () {
