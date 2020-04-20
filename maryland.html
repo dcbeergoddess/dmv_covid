@@ -54,8 +54,35 @@
 
   <img src="./assets/images/mdcovid.jpg" alt="MD state flag; image of COVID-19 virus">
 
-
-
+   <!-- Grid for BASIC INFO API CALL -->
+   <h1 id="lastUpdate"></h1>
+   <div class="page-grid">
+     <!-- MORE DETAILED DATA -->
+     <div id="dataDiv" class="data-grid">
+       <p id="totalTests"></p>
+       <p id="positivePercent"></p>
+       <p id="cases"></p>
+       <p id="deaths"></p>
+       <p id="recovered"></p>
+   </div>  
+   </div>  
+   <!-- Make INFO for Daily API CALL HERE Possibly a chart -->
+   <h1 id="updatesDay"></h1>
+       <!-- Executive Order -->
+       <iframe
+         src="https://governor.maryland.gov/wp-content/uploads/2020/03/Proclamation-COVID-19.pdf"
+         frameborder="0" height="800px" width="600px"></iframe>
+       <!-- Twitter Updates -->
+       <div class="card twitter-card" style="width: 40rem;">
+         <div class="card-body">
+           <h5 class="card-title">MD DOH Twitter</h5>
+           <h6 class="card-subtitle mb-2 text-muted">Live MD Department of Health Twitter Feed</h6>
+           <div id="twitterDiv">
+             <a class="twitter-timeline" href="https://twitter.com/MDHealthDept">Tweets by the State of Maryland Department of Health</a>
+             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+           </div>
+         </div>
+       </div>
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -70,8 +97,8 @@
     crossorigin="anonymous"></script>
 
   <!-- link to the JS file -->
+  <script type="text/javascript" src="assets/js/scriptMD.js"></script>
   <script src="assets/js/moment.js"></script>
-  <script type="text/javascript" src="./assets/js/scriptMD.js"></script>
 
 
 </body>

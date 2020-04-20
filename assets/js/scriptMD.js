@@ -18,3 +18,4 @@ $.ajax ({
     $("#positivePercent").text("Percent of Tests that were Positive: " + positivePercent + "%");
   });
   
+  
