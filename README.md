@@ -6,14 +6,14 @@
 
 ## Description
 
-The team decided to work on creating a website related to the Covid-19 pandemeic and providing the user with current and local information whil also bringing a fun aspect to balance out the grim details of our current situation. 
+The team decided to work on creating a website related to the Covid-19 pandemeic and providing the user with current and local information while also bringing a fun aspect to balance out the grim details of the current situation. 
 
 
 ## User Story
 
-Get detailed, up to date information regarding the Covid-19 pandemic on each state in the DMV area. On the main page user can also search by state using abbrevation code of state. 
+Get detailed, up to date information regarding the Covid-19 pandemic on each state in the DMV area. On the main page user can also search by state using abbrevation code of state and return the appropriate data for any state. 
 
-Main page will provide visitor with facts from trusted api sources that gets updated on the regular for DC, MD, and VA.
+Main page will provide visitor with facts from trusted api sources that gets updated on the regular for DC, MD, and VA when they first enter the page.
 
 Individual pages will provide visitor with more details on growth in cases and links to updated health government twitter feeds. Also will include other resources and links to pertinent info that applies to their area/state.  
 
@@ -27,10 +27,10 @@ Provide comic relief in our “Escape from Reality” page. Provides user with c
 ## Credits
 
 **Collaborators**
-* [@noah](https://github.com/nmhayne)
-* [@afton](https://github.com/aftongauntlett)
-* [@rachel](https://github.com/dcbeergoddess) (https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
-* [@raymond](https://github.com/rayfor1)
+* [@noah  ](https://github.com/nmhayne)![GitHub followers](https://img.shields.io/github/followers/nmhayne?label=Follow&style=social)
+* [@afton  ](https://github.com/aftongauntlett)![GitHub followers](https://img.shields.io/github/followers/aftongauntlett?label=Follow&style=social)
+* [@rachel  ](https://github.com/dcbeergoddess) ![GitHub followers](https://img.shields.io/github/followers/dcbeergoddess?label=Follow&style=social)
+* [@raymond ](https://github.com/rayfor1)![GitHub followers](https://img.shields.io/github/followers/rayfor1?label=Follow&style=social)
 
 
 ### API Resources
@@ -49,7 +49,7 @@ https://thecatapi.com/
     * Getting Started with Chart.js: [Traversy YouTube](https://www.youtube.com/watch?v=sE08f4iuOhA)
 * flexbox 
     * worked better for us to display data instead of CSS grid
-    * '<div class="d-flex justify-content-center flex-wrap"></div>'
+    * <div class="d-flex justify-content-center flex-wrap"></div>
     * [Flex Resource](https://getbootstrap.com/docs/4.0/utilities/flex/)
 
 ### FAQ LINKS
