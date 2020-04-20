@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+<link rel="stylesheet" href="assets/Chartjs/Chart.css">
   <!-- link to our CSS file -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -58,6 +59,8 @@
 
   <h1 id="lastUpdate"></h1>
   <div class="page-grid">
+    <canvas id="myChart" width="400" height="400"></canvas>
+
     <!-- MORE DETAILED DATA -->
     <div id="dataDiv" class="data-grid">
       <p id="totalTests"></p>
@@ -111,9 +114,12 @@
 
 
 
+
   <!-- link to the JS file -->
-  <script type="text/javascript" src="./assets/js/scriptVA.js"></script>
   <script src="assets/js/moment.js"></script>
+  <script src="assets/Chartjs/Chart.js"></script>
+  <script type="text/javascript" src="./assets/js/scriptVA.js"></script>
+
 </body>
 
 </html>
