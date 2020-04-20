@@ -1,74 +1,48 @@
-# project_01
-First Group project
-
-# Trello Link
-https://trello.com/invite/b/dBNdVUVs/ca5539805af6ee3d365b73815284aa73/gwu-project-1
-
-# User Story
-
-A main access point to provide current information on the Covid-19 pandemic for the local DC, MD, and VA area.  
+# GROUP NARR Project_01
 
 
-## SPECS OF PROJECT
-- Build any kind of website
-- Have to use jQuery
-- Have to use at least one API
-    - Google public APIs
-- Use some sort of CSS framework
-    - Bootstrap
-- Use some new technology we have not used in class
-    - Moment js library
-    - jQuery plugins
-    - Other CSS framework
-- Introduce slideshow
-    - Division of work
-    - Technology stack
-    - MVP
-- Has to be deployable on GitHub
-- Support two levels of responsiveness
-    - Desktop and mobile
-    - Etc
-- Git commit regularly
-    - we will go over branching
+## Description
 
-Recommend: test API and make sure you can work with it
-Figure out unknowns first 
-
-## GROUP PROJECT NOTES
-
-Possible new Technology
-- PS5.js
-    - Create a canvas
-    - Create shapes
-    - Would be loaded like a javascript file
-- vuejs.org — too soon for that
-
-- Third party APIs
-    - Covid 19 Resources
-    - Pokemon/fun resources
+The team decided to work on creating a website related to the Covid-19 pandemeic and providing the user with current and local information whil also bringing a fun aspect to balance out the grim details of our current situation. 
 
 
-Afton: CSS/FunPage API
-Rachel: DC/README
-NOAH: VA/CSS GRID
-RAYMOND: MD/CSS
+## User Story
+
+Get detailed, up to date information regarding the Covid-19 pandemic on each state in the DMV area with one click.
+
+Main page will provide visitor with facts from trusted api sources that gets updated on the regular for DC, MD, and VA.
+
+Individual pages will provide visitor with more details on growth in cases and links to updated health government twitter feeds. Also will include other resources and links to pertinent info that applies to their area/state.  
+
+Provide FAQ page and links to support networks. 
+
+Provide comic relief in our “Escape from Reality” page. Provides user with comic banter and games along with ideas on how to combat the stress and anxiety one can be feeling during these times.  
+
+## Trello Link
+[Manage Group Tasks](https://trello.com/invite/b/dBNdVUVs/ca5539805af6ee3d365b73815284aa73/gwu-project-1)
+
+## Credits
+
+**Collaborators**
+*[@noah](https://github.com/nmhayne)
+*[@afton](https://github.com/aftongauntlett)
+*[@rachel](https://github.com/dcbeergoddess)
+*[@raymond](https://github.com/rayfor1)
+
 
 ### API Resources
-https://p5js.org/
-https://evilinsult.com/api/
-https://yesno.wtf/api
-https://www.thecocktaildb.com/api.php
-https://developer.wmata.com/
-https://www.brewerydb.com/developers
-https://owlbot.info/?ref=public-apis
 
-**Covid**
-https://covid19api.com/
-https://coronavirus.jhu.edu/map.html
-https://coronavirus.jhu.edu/map.html
-
-**By State**
+**Covid By State**
 https://covidtracking.com/api
+
+**Cat API**
+https://thecatapi.com/
+
+### New Technology Resources
+
+* moment.js
+* chart.js
+    * Getting Started with Chart.js [Traversy YouTube](https://www.youtube.com/watch?v=sE08f4iuOhA)
 
 ## Pseudo Code
 
@@ -87,43 +61,8 @@ https://covidtracking.com/api
 
 3. pulling info from covid API - current uptodate 
 4. display info on main page
-5. create search function for more info on each area?
-6. survival guide and info page
-7. comic relief page 
+7. comic relief page with more covid resources/survival 
 
-## initial tasks
-
-build quick test for covid API
-what info can we console.log using ajax
-brainstorm what to push into website
-
-### Important Info for State Specific Sites
-- DC - Rachel
-- VA - Noah
-- MD - Raymond
-- CSS - Afton
-- Daily Increases in Cases
-- Incorporate twitter updates
-- links to sites with resources
-    - unemployement
-    - health
-    - food
-    - etc.
-- FAQs that we come accross in our research
-
-**NOAH**
-- accordion boxes for frequently asked questions
-- twitter feed
-- google anayltics api to graph, might be too much to include
-
-### Other Things-to-do Update Sat 04_18
-
-- forms to incorporate in later
-    - newsletter submissions
-- chat rooms
-- other interactive components 
-- slideshow ideas
-    - agenda for presentation (RM) 
 
 
 
