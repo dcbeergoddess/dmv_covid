@@ -10,9 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<link rel="stylesheet" href="assets/Chartjs/Chart.css">
-  <!-- link to our CSS file -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/Chartjs/Chart.css">
 
   <!-- LINK TO VA SPECIFIC CSS -->
   <link rel="stylesheet" href="assets/css/styleVA.css">
@@ -28,7 +26,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
 
 
   <title>Covid-19: VA</title>
@@ -52,57 +49,82 @@
     </div>
   </nav>
 
+  <!-- creating a button to toggle dark mode on and off -->
+  <div>
+    <button type="button" class="btn btn-dark" id="darkMode">Toggle Dark Mode</button>
+  </div>
+
   <!-- BANNER PHOTO  -->
-  <img src="./assets/images/vacovid.jpg" alt="virginia state, image of covid 19 virus">
+  <!-- changed to mostly CSS -->
+  <div class="image"></div>
 
 
-
+  <h2>Virginia Stats</h2>
   <h1 id="lastUpdate"></h1>
-  <div class="page-grid">
-    <canvas id="myChart" width="400" height="400"></canvas>
 
-    <!-- MORE DETAILED DATA -->
-    <div id="dataDiv" class="data-grid">
-      <p id="totalTests"></p>
-      <p id="positivePercent"></p>
-      <p id="cases"></p>
-      <p id="deaths"></p>
-      <p id="recovered"></p>
+
+  <div class="d-flex justify-content-center flex-wrap">
+    <div class="my-chart">
+      <canvas id="myChart" width="400" height="300"></canvas>
     </div>
+    <div class="card ml-5">
+      <div class="card-body">
+        <div id="dataDiv" class="data-grid"></div>
+        <p id="cases"></p>
+        <p id="deaths"></p>
+        <p id="recovered"></p>
+      </div>
+    </div>
+  </div>
 
+  <div class="card">
+    <div class="card-body">
+      <!-- MORE DETAILED DATA -->
+      <div id="dataDiv" class="data-grid">
+        <p id="totalTests"></p>
+        <p id="positivePercent"></p>
+      </div>
+    </div>
+  </div>
 
+  <!-- GENERAL FAQ -->
+  <!-- <div id="faqDiv">
+    
+    </div> -->
 
-
-
-    <!-- GENERAL FAQ -->
-    <!-- <div id="faqDiv">
+  <!-- UNEMPLOYMENT -->
+  <!-- <div id="employDiv">
       
     </div> -->
 
-    <!-- UNEMPLOYMENT -->
-    <!-- <div id="employDiv">
-      
-    </div> -->
+  <!-- IFRAME SHOWING EXECUTIVE ORDER -->
+  <!-- we can keep the iframe if you guys want to, but it makes scaling the page look rough on mobile - they are not very responsive. I included a link to the executive order instead for now.  -->
 
-    <div>
-
-      <!-- IFRAME SHOWING EXECUTIVE ORDER -->
+  <!-- <div class="d-flex justify-content-center">
+    <div class="my-border">
       <iframe src="assets\Virginia-ExecOrder53.pdf" frameborder="0" height="800px" width="600px"></iframe>
-
-
-      <!-- TWITTER -->
-
-      <a class="twitter-timeline" href="https://twitter.com/VDHgov?ref_src=twsrc%5Etfw" data-width="600"
-        data-height="800">
-        Tweets by VDHgov</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-      </script>
-
     </div>
+  </div> -->
 
+  <div class="card order">
+    <div class="card-body">
+      <a href="https://www.governor.virginia.gov/media/governorvirginiagov/executive-actions/EO-55-Temporary-Stay-at-Home-Order-Due-to-Novel-Coronavirus-(COVID-19).pdf"
+        target="_blank" class="card-link">View the Executive Order from the Governor of Virginia here.</a><br>
+    </div>
   </div>
 
 
+  <!-- TWITTER -->
+
+  <div class="d-flex justify-content-center pt-5">
+    <div class="my-border">
+      <a class="twitter-timeline" href="https://twitter.com/VDHgov?ref_src=twsrc%5Etfw" data-width="600"
+        data-height="800">Tweets by VDHgov</a></div>
+  </div>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+  </script>
+  </div>
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -111,8 +133,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-
-
 
 
   <!-- link to the JS file -->
