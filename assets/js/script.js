@@ -1,5 +1,5 @@
 
-// querySTATE 
+// querySTATE
 var queryDC = "https://covidtracking.com/api/states?state=DC"
 var queryMD = "https://covidtracking.com/api/states?state=MD"
 var queryVA = "https://covidtracking.com/api/states?state=VA"
@@ -85,7 +85,8 @@ $("#darkMode").click(function () {
 // CLICK HANDLER FOR THE SEARCH BUTTON
 $("#searchButton").click(function() {
   event.preventDefault();
-  stateInput=$("#stateInput").val()
+  stateInput=$("#stateInput").val().toUpperCase();
+  console.log(stateInput);
   console.log($("#stateInput").val());
   if(stateInput!="" && stateInput!=null){
     getNewState();
@@ -99,6 +100,7 @@ $("#searchButton").click(function() {
 
 // FUNCTION THAT CREATES NEW STATE AND FILLS WITH AJAX CALL
 function getNewState(){
+  $("#covidStats").empty();
   newURL="https://covidtracking.com/api/states?state="+stateInput;
   covidStatsDiv=$("<div>").addClass("card","covidStats");
   cardBodyDiv=$("<div>").addClass("card-body");
@@ -114,6 +116,7 @@ function getNewState(){
     url: newURL,
     method: "GET"
   }).then(function(response){
+    console.log(response);
     stateResponse=response.state;
     stateCase=response.positive;
     stateDeath=response.death;
@@ -164,120 +167,64 @@ function unAbrevState(input){
 
 
 var states = [
-{abbrev: "AK", fullname: "Alaska"},
+{ abbrev: "AK", fullname: "Alaska"},
 { abbrev: "AS", fullname:  "American Samoa"},
-{abbrev: "AZ", fullname: 
-"Arizona"},
-{  abbrev: "AR", fullname: 
-"Arkansas"},
-{ abbrev: "CA", fullname: 
-"California"},
-{ abbrev: "CO", fullname: 
-"Colorado"},
-{abbrev: "CT", fullname: 
-"Connecticut"},
-{ abbrev: "DE", fullname: 
-"Delaware"},
-{ abbrev: "DC", fullname: 
-"District Of Columbia"},
-{ abbrev: "FM", fullname: 
-"Federated States Of Micronesia"},
-{ abbrev: "FL", fullname: 
-"Florida"},
-{ abbrev: "GA", fullname: 
-"Georgia"},
-{ abbrev: "GU", fullname: 
-"Guam"},
-{ abbrev: "HI", fullname: 
-"Hawaii"},
-{ abbrev: "ID", fullname: 
-"Idaho"},
-{ abbrev: "IL", fullname: 
-"Illinois"},
-{ abbrev: "IN", fullname: 
-"Indiana"},
-{ abbrev: "IA", fullname: 
-"Iowa"},
-{ abbrev: "KS", fullname: 
-"Kansas"},
-{ abbrev: "KY", fullname: 
-"Kentucky"},
-{ abbrev: "LA", fullname: 
-"Louisiana"},
-{ abbrev: "ME", fullname: 
-"Maine"},
-{ abbrev: "MH", fullname: 
-"Marshall Islands"},
-{ abbrev: "MD", fullname: 
-"Maryland"},
-{ abbrev: "MA", fullname: 
-"Massachusetts"},
-{ abbrev: "MI", fullname: 
-"Michigan"},
-{ abbrev: "MN", fullname: 
-"Minnesota"},
-{ abbrev: "MS", fullname: 
-"Mississippi"},
-{ abbrev: "MO", fullname: 
-"Missouri"},
-{ abbrev: "MT", fullname: 
-"Montana"},
-{ abbrev: "NE", fullname: 
-"Nebraska"},
-{ abbrev: "NV", fullname: 
-"Nevada"},
-{ abbrev: "NH", fullname: 
-"New Hampshire"},
-{ abbrev: "NJ", fullname: 
-"New Jersey"},
-{ abbrev: "NM", fullname: 
-"New Mexico"},
-{ abbrev: "NY", fullname: 
-"New York"},
-{ abbrev: "NC", fullname: 
-"North Carolina"},
-{ abbrev: "ND", fullname: 
-"North Dakota"},
-{ abbrev: "MP", fullname: 
-"Northern Mariana Islands"},
-{ abbrev: "OH", fullname: 
-"Ohio"},
-{ abbrev: "OK", fullname: 
-"Oklahoma"},
-{ abbrev: "OR", fullname: 
-"Oregon"},
-{ abbrev: "PW", fullname: 
-"Palau"},
-{ abbrev: "PA", fullname: 
-"Pennsylvania"},
-{ abbrev: "PR", fullname: 
-"Puerto Rico"},
-{ abbrev: "RI", fullname: 
-"Rhode Island"},
-{ abbrev: "SC", fullname: 
-"South Carolina"},
-{ abbrev: "SD", fullname: 
-"South Dakota"},
-{ abbrev: "TN", fullname: 
-"Tennessee"},
-{ abbrev: "TX", fullname: 
-"Texas"},
-{abbrev: "UT", fullname: 
-"Utah"},
-{ abbrev: "VT", fullname: 
-"Vermont"},
-{ abbrev: "VI", fullname: 
-"Virgin Islands"},
-{ abbrev: "VA", fullname: 
-"Virginia"},
-{ abbrev: "WA", fullname: 
-"Washington"},
-{ abbrev: "WV", fullname: 
-"West Virginia"},
-{ abbrev: "WI", fullname: 
-"Wisconsin"},
-{abbrev: "WY", fullname: 
-"Wyoming"}
+{ abbrev: "AZ", fullname: "Arizona"},
+{ abbrev: "AR", fullname: "Arkansas"},
+{ abbrev: "CA", fullname: "California"},
+{ abbrev: "CO", fullname: "Colorado"},
+{ abbrev: "CT", fullname: "Connecticut"},
+{ abbrev: "DE", fullname: "Delaware"},
+{ abbrev: "DC", fullname: "District Of Columbia"},
+{ abbrev: "FM", fullname: "Federated States Of Micronesia"},
+{ abbrev: "FL", fullname: "Florida"},
+{ abbrev: "GA", fullname: "Georgia"},
+{ abbrev: "GU", fullname: "Guam"},
+{ abbrev: "HI", fullname: "Hawaii"},
+{ abbrev: "ID", fullname: "Idaho"},
+{ abbrev: "IL", fullname: "Illinois"},
+{ abbrev: "IN", fullname: "Indiana"},
+{ abbrev: "IA", fullname: "Iowa"},
+{ abbrev: "KS", fullname: "Kansas"},
+{ abbrev: "KY", fullname: "Kentucky"},
+{ abbrev: "LA", fullname: "Louisiana"},
+{ abbrev: "ME", fullname: "Maine"},
+{ abbrev: "MH", fullname: "Marshall Islands"},
+{ abbrev: "MD", fullname: "Maryland"},
+{ abbrev: "MA", fullname: "Massachusetts"},
+{ abbrev: "MI", fullname: "Michigan"},
+{ abbrev: "MN", fullname: "Minnesota"},
+{ abbrev: "MS", fullname: "Mississippi"},
+{ abbrev: "MO", fullname: "Missouri"},
+{ abbrev: "MT", fullname:"Montana"},
+{ abbrev: "NE", fullname:"Nebraska"},
+{ abbrev: "NV", fullname:"Nevada"},
+{ abbrev: "NH", fullname:"New Hampshire"},
+{ abbrev: "NJ", fullname:"New Jersey"},
+{ abbrev: "NM", fullname:"New Mexico"},
+{ abbrev: "NY", fullname:"New York"},
+{ abbrev: "NC", fullname:"North Carolina"},
+{ abbrev: "ND", fullname:"North Dakota"},
+{ abbrev: "MP", fullname:"Northern Mariana Islands"},
+{ abbrev: "OH", fullname:"Ohio"},
+{ abbrev: "OK", fullname:"Oklahoma"},
+{ abbrev: "OR", fullname:"Oregon"},
+{ abbrev: "PW", fullname:"Palau"},
+{ abbrev: "PA", fullname:"Pennsylvania"},
+{ abbrev: "PR", fullname:"Puerto Rico"},
+{ abbrev: "RI", fullname:"Rhode Island"},
+{ abbrev: "SC", fullname:"South Carolina"},
+{ abbrev: "SD", fullname:"South Dakota"},
+{ abbrev: "TN", fullname:"Tennessee"},
+{ abbrev: "TX", fullname:"Texas"},
+{ abbrev: "UT", fullname:"Utah"},
+{ abbrev: "VT", fullname:"Vermont"},
+{ abbrev: "VI", fullname:"Virgin Islands"},
+{ abbrev: "VA", fullname:"Virginia"},
+{ abbrev: "WA", fullname:"Washington"},
+{ abbrev: "WV", fullname:"West Virginia"},
+{ abbrev: "WI", fullname:"Wisconsin"},
+{ abbrev: "WY", fullname:"Wyoming"}
 ]
 
 
